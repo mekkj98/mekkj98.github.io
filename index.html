@@ -4,6 +4,7 @@
 <head>
     <!-- @META -->
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -13,10 +14,13 @@
 
     <!-- @SE0 -->
     <title>Keshav Jha - Developer</title>
+    <meta name="description" content="Hy, I'm keshav kumar jha. I'm a Software Developer and highly skilled in programming, web and software development and Always ready to learn a new skill, primarily when it's about technology.">
+    <meta name="keywords" content="keshav web devloper, keshav jha, keshav kumar jha, mekkj98, keshav jha portfolio, keshav jha india, mekkj98 keshav jha">
 
     <!-- @CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./assets/styles/app.css">
 </head>
 
@@ -24,7 +28,7 @@
     <div class="app">
         <section class="fview">
             <!-- @HEADER -->
-            <header id="header" class="header">
+            <header id="header" class="header" data-aos="fade-down">
                 <div class="header-left">
                     <div class="header-logo">
                         <a href="">
@@ -38,11 +42,11 @@
                     </div>
                     <nav id="nav">
                         <ul>
-                            <li><a class="hidder">&times;</a></li>
-                            <li><a href="#SKILLS">SKILLS</a></li>
-                            <li><a href="#SHOWCASE">PROJECTS</a></li>
-                            <li><a href="#ABOUT">ABOUT</a></li>
-                            <li><a href="#CONTACT">CONTACT</a></li>
+                            <li><a class="hidder animated bounceIn">&times;</a></li>
+                            <li><a class="animated bounceIn" href="#SKILLS">SKILLS</a></li>
+                            <li><a class="animated bounceIn" href="#PROJECTS">PROJECTS</a></li>
+                            <li><a class="animated bounceIn" href="#ABOUT">ABOUT</a></li>
+                            <li><a class="animated bounceIn" href="#CONTACT">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -52,17 +56,17 @@
             <!-- @HOME -->
             <div class="home" id="home">
                 <div class="homec">
-                    <div class="home-left">
+                    <div class="home-left" data-aos="fade-left">
                         <h1>HELLO,</h1>
                         <h2>I'm <span>Keshav kumar jha</span></h2>
-                        <h3>A FULL STACK WEB DEVELOPER</h3>
+                        <h3>A SOFTWARE DEVELOPER</h3>
                         <p>I code and develop simple things, and I love what I do. I'm doing programming for more than 3 year's now and specialized in <strong>Web Development.</strong>.</p>
                         <div class="home-btn-links">
-                            <a href="#SHOWCASE">MY PROJECTS</a>
+                            <a href="#PROJECTS">MY PROJECTS</a>
                             <a href="./assets/docs/Resume.pdf" download="Resume" target="_blank">GET RESUME</a>
                         </div>
                     </div>
-                    <div class="home-right ">
+                    <div class="home-right" data-aos="fade-up">
                         <div class="image-container">
                             <div class="image-container-img">
                                 <img src="./assets/images/header.svg" alt="">
@@ -80,8 +84,8 @@
             <!-- @SKILLS -->
             <div class="skills" id="SKILLS">
                 <h1>MY SKILLS</h1>
-                <div class="scards">
-                    <div class="scard">
+                <div class="scards animated slideInUp">
+                    <div class="scard" data-aos="fade-left">
                         <div class="scard_head">
                             <div class="scard_head_img">
                                 <img src="./assets/images/skills/web.png" alt="" srcset="">
@@ -103,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="scard">
+                    <div class="scard" data-aos="fade-down">
                         <div class="scard_head">
                             <div class="scard_head_img">
                                 <img src="./assets/images/skills/server.png" alt="" srcset="">
@@ -120,11 +124,11 @@
                             </div>
                             <div class="scard_stacks_frameworks">
                                 <h3>Other Stacks:</h3>
-                                <p>Laravel, Django, Express, SQL, MongoDB</p>
+                                <p>Laravel, Django, Express, SQL</p>
                             </div>
                         </div>
                     </div>
-                    <div class="scard">
+                    <div class="scard" data-aos="fade-down-right">
                         <div class="scard_head">
                             <div class="scard_head_img">
                                 <img src="./assets/images/skills/tools.png" alt="" srcset="">
@@ -138,11 +142,11 @@
                         <div class="scard_stacks">
                             <div class="scard_stacks_core">
                                 <h3>Enviroment I Live:</h3>
-                                <p>VSCODE, Linux(xubuntu), Git, Node</p>
+                                <p>Linux(xubuntu), Git, Docker</p>
                             </div>
                             <div class="scard_stacks_frameworks">
                                 <h3>Most visited places:</h3>
-                                <p>Stackoverflow, GitHub, Dev.to, Youtube</p>
+                                <p>Stackoverflow, GitHub, Dev.to</p>
                             </div>
                         </div>
                     </div>
@@ -151,13 +155,13 @@
             <!-- @END-SKILLS-->
 
             <!-- @SHOWCASE -->
-            <div class="showcase" id="SHOWCASE">
+            <div class="showcase" id="PROJECTS">
                 <div class="showcase-header">
-                    <h1>MY PORTFOLIO</h1>
+                    <h1>MY PROJECTS</h1>
                 </div>
                 <div class="showcase-content">
                     <div class="showcase-cards">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up">
                             <div class="card__image-container">
                                 <img class="card__image"
                                     src="https://raw.githubusercontent.com/mekkj98/LaraTalk/master/public/assets/images/users.png"
@@ -171,13 +175,13 @@
                             </a>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up">
                             <div class="card__image-container">
                                 <img class="card__image"
                                     src="https://raw.githubusercontent.com/mekkj98/LearnScrap/master/static/images/app/movies.png"
                                     alt="">
                             </div>
-                            <a href="https://github.com/mekkj98/LearnScrap" tergat="_blank" class="card__content">
+                            <a href="https://github.com/mekkj98/LearnScrap" targat="_blank" class="card__content">
                                 <div class="card__content-left">
                                     <h2>LearnScrap</h2>
                                     <p>A website to scrap & show movies data in python(Django) & Bootstrap.</p>
@@ -185,7 +189,7 @@
                             </a>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up">
                             <div class="card__image-container">
                                 <img class="card__image"
                                     src="https://raw.githubusercontent.com/mekkj98/wildsanc/master/assets/images/app/2.png"
@@ -200,7 +204,7 @@
                         </div>
 
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up">
                             <div class="card__image-container">
                                 <img class="card__image"
                                     src="https://raw.githubusercontent.com/mekkj98/CARLAND/master/assets/images/app/app.png"
@@ -214,7 +218,7 @@
                             </a>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-up">
                             <div class="card__image-container">
                                 <img class="card__image"
                                     src="https://raw.githubusercontent.com/mekkj98/logsign/master/assets/images/app/login.png"
@@ -224,20 +228,6 @@
                                 <div class="card__content-left">
                                     <h2>LogSign</h2>
                                     <p>A HTML, CSS, & JavaScript template for Log in and Sign Up.</p>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="card">
-                            <div class="card__image-container">
-                                <img class="card__image"
-                                    src="https://raw.githubusercontent.com/mekkj98/fb-login-page/master/assets/images/app/one.png"
-                                    alt="">
-                            </div>
-                            <a href="https://mekkj98.github.io/fb-login-page/" target="_blank" class="card__content">
-                                <div class="card__content-left">
-                                    <h2>Fb Login Page Redesign</h2>
-                                    <p>Used Stacks are HTML, CSS & Ionicons.</p>
                                 </div>
                             </a>
                         </div>
@@ -254,15 +244,15 @@
                 <h1>ABOUT ME</h1>
                 <div class="about-content">
                     <div class="about-left">
-                        <div class="about-img">
+                        <div class="about-img" data-aos="zoom-out-up">
                             <img src="./assets/images/about/me.jpg" alt="">
                         </div>
                     </div>
                     <div class="about-right">
-                        <div class="about-text">
+                        <div class="about-text" data-aos="zoom-out-up">
                             <h1>Few Words About Me.</h1>
-                            <p>A Computer Science Engineer who want to use his skills for the prosperity of any organization. Skilled in programming, web and software development. Always ready to learn a new skill, primarily when it's about technology.</p>
-                            <p>I grew up in a small town Darbhanga, Bihar, but Currently, I am pursuing my B.Tech in computer science from Lovely professional university, Jalandhar, Punjab. I'm looking for an internship or an entry-level developer job.</p>
+                            <p>Hy, I'm a Software Developer who wants to use his skills for the affluence of self and others. I'm highly skilled in programming, web and software development and Always ready to learn a new skill, primarily when it's about technology.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +265,7 @@
                 <h1>CONTACT ME</h1>
                 <div class="contact-content">
                     <div class="contact-eles">
-                        <div class="contact-ele">
+                        <div class="contact-ele" data-aos="fade-up">
                             <div class="contact-ele-left">
                                 <div class="contact-ele-img">
                                     <img src="./assets/images/contact/user.png">
@@ -287,7 +277,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-ele">
+                        <div class="contact-ele" data-aos="fade-up">
                             <div class="contact-ele-left">
                                 <div class="contact-ele-img">
                                     <img src="./assets/images/contact/phone.png">
@@ -299,7 +289,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-ele">
+                        <div class="contact-ele" data-aos="fade-up">
                             <div class="contact-ele-left">
                                 <div class="contact-ele-img">
                                     <img src="./assets/images/contact/email.png">
@@ -313,7 +303,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-ele">
+                        <div class="contact-ele" data-aos="fade-up">
                             <div class="contact-ele-left">
                                 <div class="contact-ele-img">
                                     <img src="./assets/images/contact/github.png">
@@ -325,7 +315,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-ele">
+                        <div class="contact-ele" data-aos="fade-up">
                             <div class="contact-ele-left">
                                 <div class="contact-ele-img">
                                     <img src="./assets/images/contact/linkedin.png">
@@ -337,15 +327,15 @@
                             </div>
                         </div>
 
-                        <div class="contact-ele">
+                        <div class="contact-ele" data-aos="fade-up">
                             <div class="contact-ele-left">
                                 <div class="contact-ele-img">
                                     <img src="./assets/images/contact/website.png">
                                 </div>
                             </div>
                             <div class="contact-ele-right">
-                                <p>WEBSITE</p>
-                                <p><a href="https://codesects.com" target="_blank">CodeSects</a></p>
+                                <p>Instagram</p>
+                                <p><a href="https://www.instagram.com/mekkj98/" target="_blank">Mekkj98</a></p>
                             </div>
                         </div>
 
@@ -363,7 +353,10 @@
             <p>Copyright &copy;2019 KESHAV JHA. All right reserved.</p>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./assets/scripts/app.js"></script>
+    <script>AOS.init({ duration: 1200, })</script>
+
 </body>
 
 </html>
