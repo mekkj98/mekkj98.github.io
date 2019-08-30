@@ -278,6 +278,9 @@ a:hover {
 }
 
 @media (max-width: 850px) {
+    .fview {
+        height: 100vh;
+    }
     .home .homec {
         flex-direction: column-reverse;
     }
@@ -288,7 +291,7 @@ a:hover {
     }
 
     .home .homec .home-left {
-        padding: 100px 6%;
+        padding: 55px 6%;
     }
 
     .home .homec .home-right {
@@ -763,6 +766,13 @@ a:hover {
 
     .about .about-left .about-img {
         margin: auto;
+    }
+}
+
+@media (max-width: 390px) {
+    .about .about-left .about-img {
+        width: 310px;
+        height: 400px;
     }
 }
 
