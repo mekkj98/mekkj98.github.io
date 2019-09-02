@@ -16,6 +16,7 @@ var sidenav = {
         for (var lis of this.navlist) {
             lis.querySelector("a").onclick = function () {
                 nav.style.display = "none";
+                // nav.setAttribute("data-aos", "")
             }
         }
     },
@@ -33,6 +34,7 @@ var sidenav = {
 window.onload = function () {
     if (window.innerWidth < 720) {
         sidenav.navClickOpenAndClose();
+        document.getElementById("header").setAttribute("data-aos", "null");
     };
 }
 
@@ -45,6 +47,6 @@ window.onresize = function () {
         sidenav.nav.style.display = "none";
         sidenav.navopener.style.display = "block";
         sidenav.navClickOpenAndClose();
+        document.getElementById("header").setAttribute("data-aos", "null");
     }
-
 }

@@ -168,7 +168,7 @@ a:hover {
 }
 
 .header .header-right .small-toggler button {
-    padding: 5px 5px;
+    padding: 0;
     display: block;
     margin-right: 20px;
     background: inherit;
@@ -176,6 +176,16 @@ a:hover {
     font-size: 20px;
     outline: 0;
 }
+
+.header .header-right .small-toggler button span{
+    width: 25px;
+    height: 2px;
+    background-color: #585656;
+    margin: 5px 0;
+    border-radius: 7px;
+    display: block;
+}
+
 
 @media (max-width: 1150px) {
     .header {
@@ -231,7 +241,10 @@ a:hover {
         width: 300px;
         background: #fff;
         box-shadow: 0 0 10px 0 rgba(30, 40, 48, 0.111);
-        z-index: 100000;
+        z-index: 100000000000000000000001;
+        opacity: 1;
+        transform: translateZ(0);
+        transition-timing-function: ease-in-out;
     }
 
     .header .header-right nav ul {
@@ -278,9 +291,6 @@ a:hover {
 }
 
 @media (max-width: 850px) {
-    .fview {
-        height: 100vh;
-    }
     .home .homec {
         flex-direction: column-reverse;
     }
@@ -291,7 +301,7 @@ a:hover {
     }
 
     .home .homec .home-left {
-        padding: 55px 6%;
+        padding: 70px 6%;
     }
 
     .home .homec .home-right {
