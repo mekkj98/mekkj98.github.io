@@ -242,9 +242,6 @@ a:hover {
         background: #fff;
         box-shadow: 0 0 10px 0 rgba(30, 40, 48, 0.111);
         z-index: 100000000000000000000001;
-        opacity: 1;
-        transform: translateZ(0);
-        transition-timing-function: ease-in-out;
     }
 
     .header .header-right nav ul {
