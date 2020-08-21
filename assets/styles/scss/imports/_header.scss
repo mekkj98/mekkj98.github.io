@@ -1,0 +1,105 @@
+#header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100001;
+    padding: 2rem 0 1rem 0;
+    transition: all 0.6s ease-in-out;
+
+    &.scrolled {
+        padding: 0.5rem 0 0.5rem 0;
+        border-bottom: 2px solid #f3f1f1;
+    }
+
+    .header-container {
+        max-width: 1300px;
+        padding: 0 25px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width : 769px) {
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: #3d4447;
+            text-transform: uppercase;
+            transition: color 0.5s ease-in-out;
+            padding: 10px 10px;
+
+            img {
+                margin-top: -12px;
+                height: 55px;
+            }
+
+            &.active,
+            &:hover {
+                color: #654ce8;
+            }
+        }
+        .header-logo {
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    .header-mobile-options {
+        display: none;
+
+        a {
+            font-size: 23px;
+        }
+
+        @media screen and (max-width : 769px) {
+            display: block;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+
+        .navbar {
+            ul {
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin-left: 0;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width : 769px) {
+        .header-right {
+            display: none;
+            width: 100%;
+            background: #fff;
+
+            &.active {
+                display: block;
+            }
+
+            .navbar {
+                ul {
+                    padding: 2rem;
+
+                    li {
+                        display: block;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}

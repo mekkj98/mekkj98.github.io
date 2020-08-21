@@ -1,0 +1,207 @@
+/* 2. Web Icons */
+@font-face {
+    font-family: 'kicons';
+    src: url('./fonts/kicons.ttf?liaese') format('truetype'), url('./fonts/kicons.woff?liaese') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.kicon,
+[class*="kicon-"]:before {
+    font-family: 'kicons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga"1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.kicon-menu:before {
+    content: "\e900";
+}
+
+.kicon-search:before {
+    content: "\e901";
+}
+
+.kicon-close:before {
+    content: "\e902";
+}
+
+.kicon-arrow-back:before {
+    content: "\e903";
+}
+
+.kicon-arrow-forward:before {
+    content: "\e904";
+}
+
+.kicon-arrow-down:before {
+    content: "\e905";
+}
+
+.kicon-arrow-up:before {
+    content: "\e906";
+}
+
+.kicon-arrow-dropleft:before {
+    content: "\e907";
+}
+
+.kicon-arrow-dropright:before {
+    content: "\e908";
+}
+
+.kicon-arrow-dropdown:before {
+    content: "\e909";
+}
+
+.kicon-arrow-dropup:before {
+    content: "\e90a";
+}
+
+.kicon-chevron-down:before {
+    content: "\e90b";
+}
+
+.kicon-chevron-left:before {
+    content: "\e90c";
+}
+
+.kicon-chevron-right:before {
+    content: "\e90d";
+}
+
+.kicon-chevron-up:before {
+    content: "\e90e";
+}
+
+.kicon-quote:before {
+    content: "\e90f";
+}
+
+.kicon-favorite:before {
+    content: "\e910";
+}
+
+.kicon-favorite-outline:before {
+    content: "\e911";
+}
+
+.kicon-star:before {
+    content: "\e912";
+}
+
+.kicon-star-outline:before {
+    content: "\e913";
+}
+
+.kicon-call:before {
+    content: "\e914";
+}
+
+.kicon-mail:before {
+    content: "\e915";
+}
+
+.kicon-map:before {
+    content: "\e916";
+}
+
+.kicon-navigate:before {
+    content: "\e917";
+}
+
+.kicon-pin:before {
+    content: "\e918";
+}
+
+.kicon-send:before {
+    content: "\e919";
+}
+
+.kicon-cart:before {
+    content: "\e91a";
+}
+
+.kicon-share:before {
+    content: "\e91b";
+}
+
+.kicon-social-dribbble:before {
+    content: "\e91c";
+}
+
+.kicon-social-dropbox:before {
+    content: "\e91d";
+}
+
+.kicon-social-facebook:before {
+    content: "\e91e";
+}
+
+.kicon-social-foursquare:before {
+    content: "\e91f";
+}
+
+.kicon-social-github:before {
+    content: "\e920";
+}
+
+.kicon-social-google:before {
+    content: "\e921";
+}
+
+.kicon-social-googleplus:before {
+    content: "\e922";
+}
+
+.kicon-social-instagram:before {
+    content: "\e923";
+}
+
+.kicon-social-linkedin:before {
+    content: "\e924";
+}
+
+.kicon-social-pinterest:before {
+    content: "\e925";
+}
+
+.kicon-social-reddit:before {
+    content: "\e926";
+}
+
+.kicon-social-rss:before {
+    content: "\e927";
+}
+
+.kicon-social-tumblr:before {
+    content: "\e928";
+}
+
+.kicon-social-twitter:before {
+    content: "\e929";
+}
+
+.kicon-social-vimeo:before {
+    content: "\e92a";
+}
+
+.kicon-social-yahoo:before {
+    content: "\e92b";
+}
+
+.kicon-social-youtube:before {
+    content: "\e92c";
+}

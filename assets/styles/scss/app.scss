@@ -1,0 +1,146 @@
+/**
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Table of contents:
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    1. Reboot
+    2. Web Icons
+    3. Typography
+        3.1 Links
+        3.2 Form elements
+*/
+@import './imports/reboot';
+@import './imports/icons';
+@import './imports/typography';
+@import './imports/header';
+@import './imports/index';
+@import './imports/footer';
+
+/* 12. Projects Listing */
+.grid-item {
+   margin-bottom: 30px;
+}
+
+.project-thumb>a {
+   display: block;
+   position: relative;
+}
+
+
+.project-thumb>a:before {
+   content: '';
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, rgba(255, 255, 255, .7)), to(rgba(255, 255, 255, .9)));
+   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 75%, rgba(255, 255, 255, .9) 100%);
+   background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 75%, rgba(255, 255, 255, .9) 100%);
+   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .7) 75%, rgba(255, 255, 255, .9) 100%);
+}
+
+.project-thumb img {
+   display: block;
+   width: 100%;
+   min-height: 250px;
+}
+
+.project-thumb .project-thumb-details {
+   position: absolute;
+   z-index: 3;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: block;
+   padding: 2rem 2.5rem;
+}
+
+.project-thumb .project-thumb-details .title {
+   display: block;
+   font-family: 'Merriweather', sans-serif;
+   font-size: 1.4rem;
+   line-height: 2.2rem;
+   color: #727f88;
+   transition: all 0.5s ease-in-out;
+}
+
+.project-thumb .project-thumb-details .description {
+   transition: all 0.5s ease-in-out;
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: .5rem;
+   color: #727f88;
+}
+
+.project-thumb a>i {
+   position: absolute;
+   z-index: 3;
+   left: 2rem;
+   top: 2rem;
+   font-size: 24px;
+   opacity: 0;
+   visibility: hidden;
+   -webkit-transition: .3s opacity, .3s visibility, .3s left;
+   -o-transition: .3s opacity, .3s visibility, .3s left;
+   transition: .3s opacity, .3s visibility, .3s left;
+   color: #999999;
+}
+
+.project-thumb a:hover>i {
+   left: 2.5rem;
+   opacity: 1;
+   visibility: visible;
+   color: #262a2c;
+}
+
+.project-thumb a:hover {
+
+   span.title,
+   span.description {
+      color: #262a2c;
+   }
+}
+
+
+@media (min-width: 768px) {
+
+   .grid-item,
+   .grid-sizer {
+      width: 47.5%;
+   }
+
+   .gutter-sizer {
+      width: 5%;
+   }
+
+   .grid-item {
+      float: left;
+   }
+
+   .grid-item.grid-item-wide {
+      width: 100%;
+   }
+}
+
+/* 22. Desktop query (1200px) */
+@media (min-width: 1200px) {
+
+   .grid-item,
+   .grid-sizer {
+      // width: 22.975%;
+      width: 47.5%;
+   }
+
+   .gutter-sizer {
+      width: 2.7%;
+   }
+
+   .grid-item {
+      margin-bottom: 2.7%;
+   }
+
+   .grid-item.grid-item-wide {
+      width: 48.65%;
+   }
+}

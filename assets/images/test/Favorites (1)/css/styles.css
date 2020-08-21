@@ -1,0 +1,32 @@
+.icon-wordpress, 
+.icon-xcode, 
+.icon-web-design, 
+.icon-web-advertising, 
+.icon-web-design-2, 
+.icon-cloud-privacy, 
+.icon-artificial-intelligence, 
+.icon-ios-development
+ {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.1em;
+}
+
+.icon-wordpress>svg, 
+.icon-xcode>svg, 
+.icon-web-design>svg, 
+.icon-web-advertising>svg, 
+.icon-web-design-2>svg, 
+.icon-cloud-privacy>svg, 
+.icon-artificial-intelligence>svg, 
+.icon-ios-development>svg
+ {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.1em;
+}
+

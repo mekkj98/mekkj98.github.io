@@ -1,0 +1,715 @@
+html {
+    background-color: #f7f9fb;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #5d676d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', sans-serif;
+    color: #262a2c;
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    color: #262a2c;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2,
+h3,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.2rem;
+    line-height: 4.8rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h5,
+h6 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    color: #acb6bd;
+}
+
+blockquote {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #f7f9fb;
+    color: #262a2c;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto 2rem;
+}
+
+blockquote:before {
+    content: '\e90f';
+    font-family: 'saulticons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #dbe1e6;
+    display: block;
+    font-size: 3rem;
+    margin: 0 1.5rem 1.5rem;
+}
+
+blockquote p {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote cite {
+    font-size: 1rem;
+    color: #727f88;
+    font-style: normal;
+}
+
+blockquote> :last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 1.25rem;
+    list-style: square outside none;
+}
+
+ul li {
+    margin-left: 1.25rem;
+}
+
+ol {
+    padding-left: 1.25rem;
+    list-style: decimal outside none;
+}
+
+ul li,
+ol li {
+    margin-left: 1.25rem;
+}
+
+li ul,
+li ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+dl,
+dd,
+address {
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+acronym,
+q,
+var {
+    font-weight: 500;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #999;
+    cursor: help;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: 'Courier New', monospace;
+}
+
+pre,
+code {
+    background-color: #fafafa;
+    background-color: rgba(0, 0, 0, .02);
+}
+
+pre {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: .9rem;
+}
+
+pre code {
+    display: block;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+
+table caption {
+    padding: 0 0 .5rem;
+    border: 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+table th {
+    position: relative;
+    padding: .6rem .5rem;
+    border-bottom: 2px solid #dbe1e6;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+table tbody td {
+    padding: .5rem;
+    border-bottom: 1px solid #dbe1e6;
+}
+
+table tbody tr:last-child th,
+table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+table tbody+tbody {
+    border-top: 2px solid #dbe1e6;
+}
+
+table tfoot td {
+    padding: .6rem .5rem;
+    border-top: 1px solid #dbe1e6;
+}
+
+hr,
+.widget-title:after {
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    margin: 1rem 0 1rem;
+    border: 0;
+    line-height: 1;
+    text-align: center;
+    background-color: #654ce8;
+}
+
+/* 4. Links */
+a {
+    color: #654ce8;
+    text-decoration: none;
+}
+
+/* 5. Form elements */
+form {
+    margin-bottom: 1.5rem;
+}
+
+label,
+legend {
+    display: block;
+    font-size: .9em;
+    font-weight: 400;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=number],
+input[type=range],
+input[type=tel],
+input[type=url],
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    /* Removing the inner shadow on iOS inputs */
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #dbe1e6;
+    border-radius: 0;
+    color: #262a2c;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: normal;
+    margin: 0 0 1.5rem;
+    max-width: 100%;
+    outline: none;
+    padding: .75rem 0;
+    -webkit-transition: color .5s, border-color .5s;
+    -o-transition: color .5s, border-color .5s;
+    transition: color .5s, border-color .5s;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=number]:focus,
+input[type=range]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+textarea:focus,
+select:focus {
+    border-color: #727f88;
+}
+
+input[type=text]:focus:invalid,
+input[type=password]:focus:invalid,
+input[type=email]:focus:invalid,
+input[type=search]:focus:invalid,
+input[type=date]:focus:invalid,
+input[type=month]:focus:invalid,
+input[type=time]:focus:invalid,
+input[type=datetime]:focus:invalid,
+input[type=datetime-local]:focus:invalid,
+input[type=number]:focus:invalid,
+input[type=range]:focus:invalid,
+input[type=tel]:focus:invalid,
+input[type=url]:focus:invalid,
+textarea:focus:invalid {
+    border-color: #ff3c1f;
+}
+
+input:invalid,
+textarea:invalid {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[disabled],
+button[disabled],
+select[disabled],
+textarea[disabled] {
+    cursor: default;
+    opacity: .5;
+}
+
+input[type=checkbox]~label,
+input[type=radio]~label {
+    display: inline-block;
+}
+
+input[type=file] {
+    width: 100%;
+    margin: 0 0 1rem;
+}
+
+select {
+    background: transparent url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIzN3B4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDM3IDUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM3IDUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0yMC4yMzMzMzM1ODc2NDY0ODQsNSBMMTYuNzMzMzMzNTg3NjQ2NDg0LDAgaDcgTDIwLjIzMzMzMzU4NzY0NjQ4NCw1IHoiLz48L3N2Zz4) no-repeat 100% 50%;
+    padding-right: 2.2rem;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    min-height: 6.3rem;
+    overflow: auto;
+    resize: vertical;
+    vertical-align: top;
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    color: #acb6bd;
+}
+
+::-moz-placeholder {
+    color: #acb6bd;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #acb6bd;
+}
+
+button,
+input[type=submit],
+input[type=reset],
+input[type=button],
+.button {
+    display: inline-block;
+    padding: 1.1rem 2.2rem;
+    line-height: normal;
+    margin: 0 .8rem 1.5rem 0;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-color: #654ce8;
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    border-radius: .4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .2);
+    box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .2);
+    -webkit-transition: color .3s, background-color .3s, padding .3s, -webkit-box-shadow .3s;
+    transition: color .3s, background-color .3s, padding .3s, -webkit-box-shadow .3s;
+    -o-transition: color .3s, background-color .3s, padding .3s, box-shadow .3s;
+    transition: color .3s, background-color .3s, padding .3s, box-shadow .3s;
+    transition: color .3s, background-color .3s, padding .3s, box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+button.big,
+input[type=submit].big,
+input[type=reset].big,
+input[type=button].big,
+.button.big {
+    font-size: 1.1rem;
+    padding: 1.3rem 4rem;
+}
+
+button:hover,
+button:focus,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset]:hover,
+input[type=reset]:focus,
+input[type=button]:hover,
+input[type=button]:focus,
+.button:hover,
+.button:focus {
+    -webkit-box-shadow: 0 20px 40px 0 rgba(101, 76, 232, .3);
+    box-shadow: 0 20px 40px 0 rgba(101, 76, 232, .3);
+}
+
+button:active,
+input[type=submit]:active,
+input[type=reset]:active,
+input[type=button]:active,
+.button:active {
+    -webkit-box-shadow: 0 10px 40px 0 rgba(101, 76, 232, .3);
+    box-shadow: 0 10px 40px 0 rgba(101, 76, 232, .3);
+}
+
+button.white,
+input[type=submit].white,
+input[type=reset].white,
+input[type=button].white,
+.button.white {
+    background-color: #fff;
+    color: #654ce8;
+    -webkit-box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .1);
+    box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .1);
+}
+
+button.white:active,
+input[type=submit].white:active,
+input[type=reset].white:active,
+input[type=button].white:active,
+.button.white:active {
+    color: #2a2e30;
+    background-color: #f7f9fb;
+}
+
+button.gray,
+input[type=submit].gray,
+input[type=reset].gray,
+input[type=button].gray,
+.button.gray {
+    color: #fff;
+    background-color: #acb6bd;
+}
+
+button.dark,
+input[type=submit].dark,
+input[type=reset].dark,
+input[type=button].dark,
+.button.dark {
+    color: #fff;
+    background-color: #262a2c;
+    -webkit-box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .3);
+    box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .3);
+}
+
+button.white:hover,
+button.white:focus,
+input[type=submit].white:hover,
+input[type=submit].white:focus,
+input[type=reset].white:hover,
+input[type=reset].white:focus,
+input[type=button].white:hover,
+input[type=button].white:focus,
+.button.white:hover,
+.button.white:focus {
+    -webkit-box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .2);
+    box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .2);
+}
+
+button.gray:hover,
+button.gray:focus,
+button.dark:hover,
+button.dark:focus,
+input[type=submit].gray:hover,
+input[type=submit].gray:focus,
+input[type=submit].dark:hover,
+input[type=submit].dark:focus,
+input[type=reset].gray:hover,
+input[type=reset].gray:focus,
+input[type=reset].dark:hover,
+input[type=reset].dark:focus,
+input[type=button].gray:hover,
+input[type=button].gray:focus,
+input[type=button].dark:hover,
+input[type=button].dark:focus,
+.button.gray:hover,
+.button.gray:focus,
+.button.dark:hover,
+.button.dark:focus {
+    -webkit-box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .4);
+    box-shadow: 0 20px 40px 0 rgba(139, 153, 163, .4);
+}
+
+button.white:active,
+button.gray:active,
+button.dark:active,
+input[type=submit].white:active,
+input[type=submit].gray:active,
+input[type=submit].dark:active,
+input[type=reset].white:active,
+input[type=reset].gray:active,
+input[type=reset].dark:active,
+input[type=button].white:active,
+input[type=button].gray:active,
+input[type=button].dark:active,
+.button.white:active,
+.button.gray:active,
+.button.dark:active {
+    -webkit-box-shadow: 0 10px 40px 0 rgba(139, 153, 163, .4);
+    box-shadow: 0 10px 40px 0 rgba(139, 153, 163, .4);
+}
+
+button.has-arrow,
+input[type=submit].has-arrow,
+input[type=reset].has-arrow,
+input[type=button].has-arrow,
+.button.has-arrow {
+    position: relative;
+}
+
+button.has-arrow:hover,
+button.has-arrow:focus,
+input[type=submit].has-arrow:hover,
+input[type=submit].has-arrow:focus,
+input[type=reset].has-arrow:hover,
+input[type=reset].has-arrow:focus,
+input[type=button].has-arrow:hover,
+input[type=button].has-arrow:focus,
+.button.has-arrow:hover,
+.button.has-arrow:focus {
+    padding-left: 1.7rem;
+    padding-right: 2.7rem;
+}
+
+button.has-arrow.big:hover,
+button.has-arrow.big:focus,
+input[type=submit].has-arrow.big:hover,
+input[type=submit].has-arrow.big:focus,
+input[type=reset].has-arrow.big:hover,
+input[type=reset].has-arrow.big:focus,
+input[type=button].has-arrow.big:hover,
+input[type=button].has-arrow.big:focus,
+.button.has-arrow.big:hover,
+.button.has-arrow.big:focus {
+    padding-left: 3.4rem;
+    padding-right: 4.6rem;
+}
+
+button.has-arrow:after,
+input[type=submit].has-arrow:after,
+input[type=reset].has-arrow:after,
+input[type=button].has-arrow:after,
+.button.has-arrow:after {
+    content: '\e904';
+    font-family: 'kicons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    margin-top: -.675rem;
+    opacity: 0;
+    -webkit-transition: right .3s, opacity .3s;
+    -o-transition: right .3s, opacity .3s;
+    transition: right .3s, opacity .3s;
+}
+
+button.has-arrow.big:after,
+input[type=submit].has-arrow.big:after,
+input[type=reset].has-arrow.big:after,
+input[type=button].has-arrow.big:after,
+.button.has-arrow.big:after {
+    font-size: 1.6rem;
+    right: 2.8rem;
+    margin-top: -.9rem;
+}
+
+button.has-arrow:hover:after,
+button.has-arrow:focus:after,
+input[type=submit].has-arrow:hover:after,
+input[type=submit].has-arrow:focus:after,
+input[type=reset].has-arrow:hover:after,
+input[type=reset].has-arrow:focus:after,
+input[type=button].has-arrow:hover:after,
+input[type=button].has-arrow:focus:after,
+.button.has-arrow:hover:after,
+.button.has-arrow:focus:after {
+    right: 1.3rem;
+    opacity: 1;
+}
+
+button.has-arrow.big:hover:after,
+button.has-arrow.big:focus:after,
+input[type=submit].has-arrow.big:hover:after,
+input[type=submit].has-arrow.big:focus:after,
+input[type=reset].has-arrow.big:hover:after,
+input[type=reset].has-arrow.big:focus:after,
+input[type=button].has-arrow.big:hover:after,
+input[type=button].has-arrow.big:focus:after,
+.button.has-arrow.big:hover:after,
+.button.has-arrow.big:focus:after {
+    right: 2.5rem;
+}
+
+.button,
+.button:hover,
+.button:visited {
+    text-decoration: none;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
